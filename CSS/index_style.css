@@ -1,0 +1,109 @@
+
+
+/* HEADER */
+
+#header {
+  height: 4rem;
+  padding: 1rem;
+  background-color: #fff;
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  border: 1px solid lightgrey;
+}
+
+
+.menuIconBox {
+  width: fit-content;
+  height: auto;
+  background-color: #fff;
+  margin: 0.8rem 1rem;
+  position: absolute;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.line {
+  width: 2rem;
+  height: 0.17rem;
+  background-color: #000;
+  border-radius: 2rem;
+  margin: 0.5rem 0.25rem;
+  transition: 0.3s;
+}
+
+.active ._1 {
+  transform: translate(0px, 11px)rotate(45deg);
+}
+.active ._2 {
+  opacity: 0;
+}
+.active ._3 {
+  transform: translate(0px, -11px)rotate(-45deg);
+}
+
+#titleBox {
+  width: fit-content;
+  height: auto;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+#welcome {
+  color: black;
+  font-size: 1.7rem;
+}
+
+/* MAIN */
+
+#main {
+  background-color: #3272d3;
+  width: 100vw;
+  height: 80vh;
+  padding: 0;
+}
+
+.menuBox {
+  background-color: white;
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  width: fit-content;
+  height: 80vh;
+  text-transform: uppercase;
+  position: absolute;
+  top: 6rem;
+  left: -500px;
+  text-align: left;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.active .menuBox {
+  opacity: 1;
+  left: 0px;
+  pointer-events: fill;
+}
+
+nav ul {
+  margin: 1.2rem 1.8rem;
+}
+
+nav ul li {
+  margin: 0.5rem 0;
+  transition: 0.3s;
+}
+
+nav ul li:hover {
+  background-color: #d3d3d3;
+  border-radius: 0.5rem;
+}
+
+nav ul li a {
+  color: #000;
+  font-size: 1.3rem;
+  padding: 1.5rem 1.8rem;
+  display: block;
+  text-decoration: none;
+}
+
+/* FOOTER */
